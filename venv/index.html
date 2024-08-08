@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Report Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>SEO Report Generator</h1>
+    <form action="/seo-report" method="post" target="_blank">
+        <label for="url">Website URL:</label>
+        <input type="text" id="url" name="url" required>
+        
+        <label for="competitor1">Competitor 1 URL:</label>
+        <input type="text" id="competitor1" name="competitor1">
+        
+        <label for="competitor2">Competitor 2 URL:</label>
+        <input type="text" id="competitor2" name="competitor2">
+        
+        <label for="competitor3">Competitor 3 URL:</label>
+        <input type="text" id="competitor3" name="competitor3">
+        
+        <button type="submit">Generate SEO Report</button>
+    </form>
+</body>
+</html>
