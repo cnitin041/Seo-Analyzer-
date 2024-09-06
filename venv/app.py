@@ -13,7 +13,7 @@ import time
 app = Flask(__name__)
 
 # Set up OpenAI API key
-openai.api_key = "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"
+openai.api_key = "Your Api Key Put here "
 
 @app.route('/seo-report', methods=['POST'])
 def generate_seo_report():
